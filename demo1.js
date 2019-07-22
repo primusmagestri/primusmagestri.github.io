@@ -6,10 +6,10 @@
  *
  * @param {H.Map} map A HERE Map instance within the application
  */
-function renderKML(map) {
+function renderKML(map,reader) {
   // Create a reader object passing in the URL of our KML file
   //reader = new H.data.kml.Reader('https://heremaps.github.io/maps-api-for-javascript-examples/display-kml-on-map/data/us-states.kml');
-  reader = new H.data.kml.Reader('https://raw.githubusercontent.com/primusmagestri/kmzstuff/master/bravadoltefiles/sites.kml');
+  //reader = new H.data.kml.Reader('https://raw.githubusercontent.com/primusmagestri/kmzstuff/master/bravadoltefiles/sites.kml');
   
   reader.addEventListener("statechange", function(evt){
     if (evt.state === H.data.AbstractReader.State.READY) {
@@ -70,5 +70,6 @@ function logEvent(str) {
   logContainer.insertBefore(entry, logContainer.firstChild);
 }
 
+reader = new H.data.kml.Reader('https://raw.githubusercontent.com/primusmagestri/kmzstuff/master/bravadoltefiles/sites.kml');
 // Step 6: main logic goes here
-renderKML(map);
+renderKML(map,reader);
