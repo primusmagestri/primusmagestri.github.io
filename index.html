@@ -1,7 +1,20 @@
-<!DOCTYPE html>
 <html>
+<head>
+
+</head>
+
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+<div id="map" style="width:1000px; height: 1000px;"></div>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIMLxF5C1CwLR4o2O4MIyKemD3QhtUPco"></script>
+
+<script>
+	var map_parameters = { center: {lat: 35.2714125, lng: -96.9662859}, zoom: 8 };
+	var map = new google.maps.Map(document.getElementById('map'), map_parameters);
+
+	var kml_parameters = { url: 'https://raw.githubusercontent.com/primusmagestri/kmzstuff/master/bravadoltefiles/doc.kml', map: map };
+	var kml_layer = new google.maps.KmlLayer(kml_parameters);
+</script>
 </body>
 </html>
