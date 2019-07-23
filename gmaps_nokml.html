@@ -40,12 +40,8 @@ varzoom=Number(zoomparam);
 	var map_parameters = { center: {lat: varlat, lng: varlng}, zoom: varzoom };
 	var map = new google.maps.Map(document.getElementById('map'), map_parameters);
 
-
 	//var kml_parameters = { url: 'https://raw.githubusercontent.com/primusmagestri/kmzstuff/master/bravadoltefiles/doc.kml', map: map };
 	//var kml_layer = new google.maps.KmlLayer(kml_parameters);
-	
-	var kmzLayer = new google.maps.KmlLayer('BravadoLTE5July19.kmz');
-    kmzLayer.setMap(map);
 </script>
 </body>
 </html>
