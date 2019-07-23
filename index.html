@@ -41,8 +41,9 @@ varzoom=Number(zoomparam);
 	var map = new google.maps.Map(document.getElementById('map'), map_parameters);
 
 	var kml_parameters = { url: 'https://raw.githubusercontent.com/primusmagestri/kmzstuff/master/bravadoltefiles/doc.kml', map: map,  preserveViewport: true };
-	var kml_parameterscrosslra = { url: 'https://raw.githubusercontent.com/primusmagestri/kmzstuff/master/crossltelra/doc.kml', map: map,  preserveViewport: true };
 	var kml_layer = new google.maps.KmlLayer(kml_parameters);
+	
+	var kml_parameterscrosslra = { url: 'https://raw.githubusercontent.com/primusmagestri/kmzstuff/master/crossltelra/doc.kml', map: map,  preserveViewport: true };
 	var kml_layer_crosslra = new google.maps.KmlLayer(kml_parameterscrosslra);
 </script>
 </body>
