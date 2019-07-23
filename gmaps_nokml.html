@@ -22,8 +22,8 @@ function getParamValue(paramName)
     }
 }
 
-var varlat = Number(35.2714125), varlng = Number(-96.9662859);
-var varzoom=Number(8);
+var varlat = 35.2714125, varlng = -96.9662859;
+var varzoom=8;
 var addrparam = getParamValue('address');
 if(addrparam)
 {
@@ -37,7 +37,7 @@ if(zoomparam)
 {
 varzoom=Number(zoomparam);
 }
-	var map_parameters = { center: {lat: varlat, lng: varlng}, zoom: 8 };
+	var map_parameters = { center: {lat: varlat, lng: varlng}, zoom: varzoom };
 	var map = new google.maps.Map(document.getElementById('map'), map_parameters);
 
 	//var kml_parameters = { url: 'https://raw.githubusercontent.com/primusmagestri/kmzstuff/master/bravadoltefiles/doc.kml', map: map };
