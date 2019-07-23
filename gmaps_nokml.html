@@ -1,0 +1,47 @@
+<html>
+<head>
+
+</head>
+
+<body>
+
+<div id="map" style="width:1000px; height: 1000px;"></div>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIMLxF5C1CwLR4o2O4MIyKemD3QhtUPco"></script>
+
+<script>
+function getParamValue(paramName)
+{
+    var url = window.location.search.substring(1); //get rid of "?" in querystring
+    var qArray = url.split('&'); //get key-value pairs
+    for (var i = 0; i < qArray.length; i++) 
+    {
+        var pArr = qArray[i].split('='); //split key and value
+        if (pArr[0] == paramName) 
+            return pArr[1]; //return value
+    }
+}
+
+var varlat = 35.2714125, varlng = -96.9662859;
+var varzoom=8;
+var addrparam = getParamValue('address');
+if(addrparam)
+{
+var pArr = addrparam.split(','); 
+varlat = pArr[0];
+varlng = pArr[1];
+}
+
+var zoomparam = getParamValue('zoom');
+if(zoomparam)
+{
+varzoom=zoomparam;
+}
+	var map_parameters = { center: {lat: varlat, lng: varlng}, zoom: 8 };
+	var map = new google.maps.Map(document.getElementById('map'), map_parameters);
+
+	//var kml_parameters = { url: 'https://raw.githubusercontent.com/primusmagestri/kmzstuff/master/bravadoltefiles/doc.kml', map: map };
+	//var kml_layer = new google.maps.KmlLayer(kml_parameters);
+</script>
+</body>
+</html>
