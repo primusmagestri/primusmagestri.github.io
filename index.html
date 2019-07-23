@@ -28,16 +28,16 @@ var addrparam = getParamValue('address');
 if(addrparam)
 {
 var pArr = addrparam.split(','); 
-varlat = pArr[0];
-varlng = pArr[1];
+varlat = Number(pArr[0]);
+varlng = Number(pArr[1]);
 }
 
 var zoomparam = getParamValue('zoom');
 if(zoomparam)
 {
-varzoom=zoomparam;
+varzoom=Number(zoomparam);
 }
-	var map_parameters = { center: {lat: varlat, lng: varlng}, zoom: 8 };
+	var map_parameters = { center: {lat: varlat, lng: varlng}, zoom: varzoom };
 	var map = new google.maps.Map(document.getElementById('map'), map_parameters);
 
 	var kml_parameters = { url: 'https://raw.githubusercontent.com/primusmagestri/kmzstuff/master/bravadoltefiles/doc.kml', map: map };
