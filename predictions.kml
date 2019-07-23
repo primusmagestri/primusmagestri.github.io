@@ -23,7 +23,7 @@
         </Region>
         <color>7fffffff</color>
         <Icon>
-          <href>overlays/prediction00_000000.png</href>
+          <href>prediction00_000000.png</href>
           <viewBoundScale>0.8</viewBoundScale>
         </Icon>
         <altitudeMode>clampToGround</altitudeMode>
@@ -50,7 +50,7 @@
         </Region>
         <color>7fffffff</color>
         <Icon>
-          <href>overlays/prediction00_001000.png</href>
+          <href>prediction00_001000.png</href>
           <viewBoundScale>0.8</viewBoundScale>
         </Icon>
         <altitudeMode>clampToGround</altitudeMode>
@@ -77,7 +77,7 @@
         </Region>
         <color>7fffffff</color>
         <Icon>
-          <href>overlays/prediction00_002000.png</href>
+          <href>prediction00_002000.png</href>
           <viewBoundScale>0.8</viewBoundScale>
         </Icon>
         <altitudeMode>clampToGround</altitudeMode>
@@ -104,7 +104,7 @@
         </Region>
         <color>7fffffff</color>
         <Icon>
-          <href>overlays/prediction00_000001.png</href>
+          <href>prediction00_000001.png</href>
           <viewBoundScale>0.8</viewBoundScale>
         </Icon>
         <altitudeMode>clampToGround</altitudeMode>
@@ -131,7 +131,7 @@
         </Region>
         <color>7fffffff</color>
         <Icon>
-          <href>overlays/prediction00_001001.png</href>
+          <href>prediction00_001001.png</href>
           <viewBoundScale>0.8</viewBoundScale>
         </Icon>
         <altitudeMode>clampToGround</altitudeMode>
@@ -158,7 +158,7 @@
         </Region>
         <color>7fffffff</color>
         <Icon>
-          <href>overlays/prediction00_002001.png</href>
+          <href>prediction00_002001.png</href>
           <viewBoundScale>0.8</viewBoundScale>
         </Icon>
         <altitudeMode>clampToGround</altitudeMode>
@@ -185,7 +185,7 @@
         </Region>
         <color>7fffffff</color>
         <Icon>
-          <href>overlays/prediction00_003001.png</href>
+          <href>prediction00_003001.png</href>
           <viewBoundScale>0.8</viewBoundScale>
         </Icon>
         <altitudeMode>clampToGround</altitudeMode>
@@ -212,7 +212,7 @@
         </Region>
         <color>7fffffff</color>
         <Icon>
-          <href>overlays/prediction00_000002.png</href>
+          <href>prediction00_000002.png</href>
           <viewBoundScale>0.8</viewBoundScale>
         </Icon>
         <altitudeMode>clampToGround</altitudeMode>
@@ -239,7 +239,7 @@
         </Region>
         <color>7fffffff</color>
         <Icon>
-          <href>overlays/prediction00_001002.png</href>
+          <href>prediction00_001002.png</href>
           <viewBoundScale>0.8</viewBoundScale>
         </Icon>
         <altitudeMode>clampToGround</altitudeMode>
@@ -266,7 +266,7 @@
         </Region>
         <color>7fffffff</color>
         <Icon>
-          <href>overlays/prediction00_002002.png</href>
+          <href>prediction00_002002.png</href>
           <viewBoundScale>0.8</viewBoundScale>
         </Icon>
         <altitudeMode>clampToGround</altitudeMode>
@@ -293,7 +293,7 @@
         </Region>
         <color>7fffffff</color>
         <Icon>
-          <href>overlays/prediction00_003002.png</href>
+          <href>prediction00_003002.png</href>
           <viewBoundScale>0.8</viewBoundScale>
         </Icon>
         <altitudeMode>clampToGround</altitudeMode>
@@ -320,7 +320,7 @@
         </Region>
         <color>7fffffff</color>
         <Icon>
-          <href>overlays/prediction00_000003.png</href>
+          <href>prediction00_000003.png</href>
           <viewBoundScale>0.8</viewBoundScale>
         </Icon>
         <altitudeMode>clampToGround</altitudeMode>
@@ -347,7 +347,7 @@
         </Region>
         <color>7fffffff</color>
         <Icon>
-          <href>overlays/prediction00_001003.png</href>
+          <href>prediction00_001003.png</href>
           <viewBoundScale>0.8</viewBoundScale>
         </Icon>
         <altitudeMode>clampToGround</altitudeMode>
@@ -374,7 +374,7 @@
         </Region>
         <color>7fffffff</color>
         <Icon>
-          <href>overlays/prediction00_002003.png</href>
+          <href>prediction00_002003.png</href>
           <viewBoundScale>0.8</viewBoundScale>
         </Icon>
         <altitudeMode>clampToGround</altitudeMode>
