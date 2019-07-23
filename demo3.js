@@ -74,6 +74,6 @@ function logEvent(str) {
 //renderKML(map,reader);
 //reader = new H.data.kml.Reader('https://raw.githubusercontent.com/primusmagestri/kmzstuff/master/bravadoltefiles/transmitters.kml');
 //renderKML(map,reader);
-reader = new H.data.kml.Reader('https://raw.githubusercontent.com/primusmagestri/kmzstuff/master/bravadoltefiles/predictions.kml');
+reader = new H.data.kml.Reader('predictions.kml');
 // Step 6: main logic goes here
 renderKML(map,reader);
