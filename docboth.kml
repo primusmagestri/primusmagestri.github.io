@@ -1,0 +1,54 @@
+<kml>
+  <Document>
+    <name>Both LTE</name>
+    <description>Atoll Entities</description>
+    <LookAt>
+      <longitude>-95.9745758402233</longitude>
+      <latitude>35.2996547083056</latitude>
+      <range>157710.474466754</range>
+      <altitudeMode>relativeToGround</altitudeMode>
+    </LookAt>
+    <NetworkLink>
+      <name>Bravado Sites</name>
+      <description>List of Bravado sites</description>
+      <Link>
+        <href>bravadokml/bravadofiles/files/sites.kml</href>
+      </Link>
+    </NetworkLink>
+    <NetworkLink>
+      <name>Bravado Transmitters</name>
+      <description>List of Bravado transmitters</description>
+      <Link>
+        <href>bravadokml/bravadofiles/files/transmitters.kml</href>
+      </Link>
+    </NetworkLink>
+    <NetworkLink>
+      <name>Bravado Coverage plots</name>
+      <description>List of Bravado coverage plots</description>
+      <Link>
+        <href>bravadokml/bravadofiles/files/predictions.kml</href>
+      </Link>
+    </NetworkLink>
+	<NetworkLink>
+      <name>CrossLRA Sites</name>
+      <description>List of CrossLRA sites</description>
+      <Link>
+        <href>crosslrakml/crosslrafiles/files/sites.kml</href>
+      </Link>
+    </NetworkLink>
+    <NetworkLink>
+      <name>CrossLRA Transmitters</name>
+      <description>List of CrossLRA transmitters</description>
+      <Link>
+        <href>crosslrakml/crosslrafiles/files/transmitters.kml</href>
+      </Link>
+    </NetworkLink>
+    <NetworkLink>
+      <name>CrossLRA Coverage plots</name>
+      <description>List of CrossLRA coverage plots</description>
+      <Link>
+        <href>crosslrakml/crosslrafiles/files/predictions.kml</href>
+      </Link>
+    </NetworkLink> 
+  </Document>
+</kml>
