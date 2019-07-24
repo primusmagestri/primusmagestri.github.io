@@ -121,6 +121,7 @@ function initialize() {
 	
 	function Bravado()
 	{
+	
 	if(document.getElementById("checkbravado").checked)
 		layerbravado.setMap(map);
 		else
@@ -137,8 +138,12 @@ function initialize() {
     </script>
     </head>
      <body>
-<input type="checkbox" id="checkbravado" onclick="Bravado()" checked="false">Show Bravado<br>
-<input type="checkbox" id="checkcross" onclick="CrossLRA()" checked="false">Show Cross LRA<br>
+<input type="checkbox" id="checkbravado" onclick="Bravado()" >Show Bravado<br>
+<input type="checkbox" id="checkcross" onclick="CrossLRA()" >Show Cross LRA<br>
+<script>
+document.getElementById("checkbravado").checked=false;
+document.getElementById("checkcross").checked=false;
+</script>
         <div id="map" style="width: 1000px; height: 1000px;"></div>
 
 </body>
