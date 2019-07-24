@@ -45,8 +45,7 @@ varzoom=Number(zoomparam);
 	//var kml_layer = new google.maps.KmlLayer(kml_parameters);
 	
 	var kmzLayer = new google.maps.KmlLayer('https://raw.githubusercontent.com/primusmagestri/primusmagestri.github.io/master/bravadokml/bravadofiles/doc.kml', {
-          suppressInfoWindows: true,
-          preserveViewport: false
+          preserveViewport: true, screenOverlays:true
         });
     kmzLayer.setMap(map);
 </script>
