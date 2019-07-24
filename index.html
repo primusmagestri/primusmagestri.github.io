@@ -1,13 +1,16 @@
  <!DOCTYPE html>
     <html>
       <head>
+	  <script>
+	  var currOpa=0.5;
+	  </script>
       <style>
         #map {
          width: 100%;
           height: 400px;
       }
 	  #map img[src*='googleusercontent'] {
-    opacity: .3;
+    opacity: currOpa;
 }
       </style>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIMLxF5C1CwLR4o2O4MIyKemD3QhtUPco"></script>
@@ -92,9 +95,22 @@ function initialize() {
      <body>
 <input type="checkbox" id="checkbravado" onclick="Bravado()" >Show Bravado<br>
 <input type="checkbox" id="checkcross" onclick="CrossLRA()" >Show Cross LRA<br>
+<div class="slidecontainer">
+  <input type="range" min="1" max="10" value="5" class="slider" id="myRange">
+</div>
+<br>
 <script>
 document.getElementById("checkbravado").checked=false;
 document.getElementById("checkcross").checked=false;
+var myslider = document.getElementById("myRange");
+myslider.value=5;
+myslider.oninput = function() {
+var newopa=this.value/10;
+console.log(newopa);
+curropa=newopa;
+
+  //output.innerHTML = this.value;
+}
 </script>
         <div id="map" style="width: 1000px; height: 1000px;"></div>
 
