@@ -62,11 +62,8 @@ function initialize() {
   var map_parameters = { center: {lat: varlat, lng: varlng}, zoom: varzoom,mapTypeId: 'satellite' };
 	map = new google.maps.Map(document.getElementById('map'), map_parameters);
 
-  //var layers = [];
-
-
-
- 
+Bravado();
+CrossLRA();
 
 }
 
@@ -101,8 +98,6 @@ function initialize() {
 <script>
 document.getElementById("checkbravado").checked=false;
 document.getElementById("checkcross").checked=true;
-Bravado();
-CrossLRA();
 var myslider = document.getElementById("myRange");
 myslider.value=5;
 myslider.oninput = function() {
