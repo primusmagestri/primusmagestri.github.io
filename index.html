@@ -59,7 +59,7 @@ varzoom=Number(zoomparam);
  * Initializes the map and calls the function that creates polylines.
  */
 function initialize() {
-  var map_parameters = { center: {lat: varlat, lng: varlng}, zoom: varzoom,mapTypeId: 'satellite' };
+  var map_parameters = { center: {lat: varlat, lng: varlng}, zoom: varzoom,mapTypeId:  google.maps.MapTypeId.HYBRID };
 	map = new google.maps.Map(document.getElementById('map'), map_parameters);
 
 Bravado();
