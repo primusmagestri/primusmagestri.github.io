@@ -1,0 +1,33 @@
+<kml>
+  <Document>
+    <name>Cross LTE LRA 2 July 19</name>
+    <description>Atoll Entities</description>
+    <LookAt>
+      <longitude>-95.7184501682431</longitude>
+      <latitude>35.3008037075724</latitude>
+      <range>367434.719145476</range>
+      <altitudeMode>relativeToGround</altitudeMode>
+    </LookAt>
+    <NetworkLink>
+      <name>Sites</name>
+      <description>List of sites</description>
+      <Link>
+        <href>files/sites.kml</href>
+      </Link>
+    </NetworkLink>
+    <NetworkLink>
+      <name>Transmitters</name>
+      <description>List of transmitters</description>
+      <Link>
+        <href>files/transmitters.kml</href>
+      </Link>
+    </NetworkLink>
+    <NetworkLink>
+      <name>Coverage plots</name>
+      <description>List of coverage plots</description>
+      <Link>
+        <href>files/predictions.kml</href>
+      </Link>
+    </NetworkLink>
+  </Document>
+</kml>
