@@ -21,7 +21,7 @@
           </LatLonAltBox>
           <Lod/>
         </Region>
-        <color>0fffffff</color>
+        <color>7fffffff</color>
         <Icon>
           <href>overlays/prediction00_000000.png</href>
           <viewBoundScale>0.8</viewBoundScale>
@@ -48,7 +48,7 @@
           </LatLonAltBox>
           <Lod/>
         </Region>
-        <color>0fffffff</color>
+        <color>7fffffff</color>
         <Icon>
           <href>overlays/prediction00_001000.png</href>
           <viewBoundScale>0.8</viewBoundScale>
@@ -75,7 +75,7 @@
           </LatLonAltBox>
           <Lod/>
         </Region>
-        <color>0fffffff</color>
+        <color>7fffffff</color>
         <Icon>
           <href>overlays/prediction00_002000.png</href>
           <viewBoundScale>0.8</viewBoundScale>
@@ -102,7 +102,7 @@
           </LatLonAltBox>
           <Lod/>
         </Region>
-        <color>0fffffff</color>
+        <color>7fffffff</color>
         <Icon>
           <href>overlays/prediction00_003000.png</href>
           <viewBoundScale>0.8</viewBoundScale>
@@ -129,7 +129,7 @@
           </LatLonAltBox>
           <Lod/>
         </Region>
-        <color>0fffffff</color>
+        <color>7fffffff</color>
         <Icon>
           <href>overlays/prediction00_004000.png</href>
           <viewBoundScale>0.8</viewBoundScale>
@@ -156,7 +156,7 @@
           </LatLonAltBox>
           <Lod/>
         </Region>
-        <color>0fffffff</color>
+        <color>7fffffff</color>
         <Icon>
           <href>overlays/prediction00_005000.png</href>
           <viewBoundScale>0.8</viewBoundScale>
@@ -183,7 +183,7 @@
           </LatLonAltBox>
           <Lod/>
         </Region>
-        <color>0fffffff</color>
+        <color>7fffffff</color>
         <Icon>
           <href>overlays/prediction00_000001.png</href>
           <viewBoundScale>0.8</viewBoundScale>
@@ -210,7 +210,7 @@
           </LatLonAltBox>
           <Lod/>
         </Region>
-        <color>0fffffff</color>
+        <color>7fffffff</color>
         <Icon>
           <href>overlays/prediction00_001001.png</href>
           <viewBoundScale>0.8</viewBoundScale>
@@ -237,7 +237,7 @@
           </LatLonAltBox>
           <Lod/>
         </Region>
-        <color>0fffffff</color>
+        <color>7fffffff</color>
         <Icon>
           <href>overlays/prediction00_002001.png</href>
           <viewBoundScale>0.8</viewBoundScale>
@@ -264,7 +264,7 @@
           </LatLonAltBox>
           <Lod/>
         </Region>
-        <color>0fffffff</color>
+        <color>7fffffff</color>
         <Icon>
           <href>overlays/prediction00_003001.png</href>
           <viewBoundScale>0.8</viewBoundScale>
@@ -291,7 +291,7 @@
           </LatLonAltBox>
           <Lod/>
         </Region>
-        <color>0fffffff</color>
+        <color>7fffffff</color>
         <Icon>
           <href>overlays/prediction00_004001.png</href>
           <viewBoundScale>0.8</viewBoundScale>
@@ -318,7 +318,7 @@
           </LatLonAltBox>
           <Lod/>
         </Region>
-        <color>0fffffff</color>
+        <color>7fffffff</color>
         <Icon>
           <href>overlays/prediction00_005001.png</href>
           <viewBoundScale>0.8</viewBoundScale>
@@ -345,7 +345,7 @@
           </LatLonAltBox>
           <Lod/>
         </Region>
-        <color>0fffffff</color>
+        <color>7fffffff</color>
         <Icon>
           <href>overlays/prediction00_006001.png</href>
           <viewBoundScale>0.8</viewBoundScale>
@@ -372,7 +372,7 @@
           </LatLonAltBox>
           <Lod/>
         </Region>
-        <color>0fffffff</color>
+        <color>7fffffff</color>
         <Icon>
           <href>overlays/prediction00_007001.png</href>
           <viewBoundScale>0.8</viewBoundScale>
@@ -399,7 +399,7 @@
           </LatLonAltBox>
           <Lod/>
         </Region>
-        <color>0fffffff</color>
+        <color>7fffffff</color>
         <Icon>
           <href>overlays/prediction00_000002.png</href>
           <viewBoundScale>0.8</viewBoundScale>
@@ -426,7 +426,7 @@
           </LatLonAltBox>
           <Lod/>
         </Region>
-        <color>0fffffff</color>
+        <color>7fffffff</color>
         <Icon>
           <href>overlays/prediction00_001002.png</href>
           <viewBoundScale>0.8</viewBoundScale>
@@ -453,7 +453,7 @@
           </LatLonAltBox>
           <Lod/>
         </Region>
-        <color>0fffffff</color>
+        <color>7fffffff</color>
         <Icon>
           <href>overlays/prediction00_002002.png</href>
           <viewBoundScale>0.8</viewBoundScale>
@@ -480,7 +480,7 @@
           </LatLonAltBox>
           <Lod/>
         </Region>
-        <color>0fffffff</color>
+        <color>7fffffff</color>
         <Icon>
           <href>overlays/prediction00_003002.png</href>
           <viewBoundScale>0.8</viewBoundScale>
@@ -507,7 +507,7 @@
           </LatLonAltBox>
           <Lod/>
         </Region>
-        <color>0fffffff</color>
+        <color>7fffffff</color>
         <Icon>
           <href>overlays/prediction00_004002.png</href>
           <viewBoundScale>0.8</viewBoundScale>
@@ -534,7 +534,7 @@
           </LatLonAltBox>
           <Lod/>
         </Region>
-        <color>0fffffff</color>
+        <color>7fffffff</color>
         <Icon>
           <href>overlays/prediction00_005002.png</href>
           <viewBoundScale>0.8</viewBoundScale>
@@ -561,7 +561,7 @@
           </LatLonAltBox>
           <Lod/>
         </Region>
-        <color>0fffffff</color>
+        <color>7fffffff</color>
         <Icon>
           <href>overlays/prediction00_006002.png</href>
           <viewBoundScale>0.8</viewBoundScale>
@@ -588,7 +588,7 @@
           </LatLonAltBox>
           <Lod/>
         </Region>
-        <color>0fffffff</color>
+        <color>7fffffff</color>
         <Icon>
           <href>overlays/prediction00_001003.png</href>
           <viewBoundScale>0.8</viewBoundScale>
@@ -615,7 +615,7 @@
           </LatLonAltBox>
           <Lod/>
         </Region>
-        <color>0fffffff</color>
+        <color>7fffffff</color>
         <Icon>
           <href>overlays/prediction00_002003.png</href>
           <viewBoundScale>0.8</viewBoundScale>
@@ -642,7 +642,7 @@
           </LatLonAltBox>
           <Lod/>
         </Region>
-        <color>0fffffff</color>
+        <color>7fffffff</color>
         <Icon>
           <href>overlays/prediction00_003003.png</href>
           <viewBoundScale>0.8</viewBoundScale>
@@ -669,7 +669,7 @@
           </LatLonAltBox>
           <Lod/>
         </Region>
-        <color>0fffffff</color>
+        <color>7fffffff</color>
         <Icon>
           <href>overlays/prediction00_004003.png</href>
           <viewBoundScale>0.8</viewBoundScale>
@@ -696,7 +696,7 @@
           </LatLonAltBox>
           <Lod/>
         </Region>
-        <color>0fffffff</color>
+        <color>7fffffff</color>
         <Icon>
           <href>overlays/prediction00_005003.png</href>
           <viewBoundScale>0.8</viewBoundScale>
@@ -723,7 +723,7 @@
           </LatLonAltBox>
           <Lod/>
         </Region>
-        <color>0fffffff</color>
+        <color>7fffffff</color>
         <Icon>
           <href>overlays/prediction00_006003.png</href>
           <viewBoundScale>0.8</viewBoundScale>
@@ -750,7 +750,7 @@
           </LatLonAltBox>
           <Lod/>
         </Region>
-        <color>0fffffff</color>
+        <color>7fffffff</color>
         <Icon>
           <href>overlays/prediction00_007003.png</href>
           <viewBoundScale>0.8</viewBoundScale>
@@ -777,7 +777,7 @@
           </LatLonAltBox>
           <Lod/>
         </Region>
-        <color>0fffffff</color>
+        <color>7fffffff</color>
         <Icon>
           <href>overlays/prediction00_002004.png</href>
           <viewBoundScale>0.8</viewBoundScale>
@@ -804,7 +804,7 @@
           </LatLonAltBox>
           <Lod/>
         </Region>
-        <color>0fffffff</color>
+        <color>7fffffff</color>
         <Icon>
           <href>overlays/prediction00_003004.png</href>
           <viewBoundScale>0.8</viewBoundScale>
@@ -831,7 +831,7 @@
           </LatLonAltBox>
           <Lod/>
         </Region>
-        <color>0fffffff</color>
+        <color>7fffffff</color>
         <Icon>
           <href>overlays/prediction00_004004.png</href>
           <viewBoundScale>0.8</viewBoundScale>
@@ -858,7 +858,7 @@
           </LatLonAltBox>
           <Lod/>
         </Region>
-        <color>0fffffff</color>
+        <color>7fffffff</color>
         <Icon>
           <href>overlays/prediction00_005004.png</href>
           <viewBoundScale>0.8</viewBoundScale>
@@ -885,7 +885,7 @@
           </LatLonAltBox>
           <Lod/>
         </Region>
-        <color>0fffffff</color>
+        <color>7fffffff</color>
         <Icon>
           <href>overlays/prediction00_006004.png</href>
           <viewBoundScale>0.8</viewBoundScale>
@@ -912,7 +912,7 @@
           </LatLonAltBox>
           <Lod/>
         </Region>
-        <color>0fffffff</color>
+        <color>7fffffff</color>
         <Icon>
           <href>overlays/prediction00_007004.png</href>
           <viewBoundScale>0.8</viewBoundScale>
