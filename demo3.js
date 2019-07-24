@@ -71,13 +71,17 @@ function logEvent(str) {
   logContainer.insertBefore(entry, logContainer.firstChild);
 }
 
-reader = new H.data.kml.Reader('https://raw.githubusercontent.com/primusmagestri/kmzstuff/master/bravadoltefiles/doc.kml');
+/*reader = new H.data.kml.Reader('sites.kml');
 renderKML(map,reader);
-/*reader = new H.data.kml.Reader('https://raw.githubusercontent.com/primusmagestri/kmzstuff/master/bravadoltefiles/sites.kml');
+reader = new H.data.kml.Reader('transmitters.kml');
+renderKML(map,reader);*/
+//reader = new H.data.kml.Reader('https://raw.githubusercontent.com/primusmagestri/kmzstuff/master/bravadoltefiles/doc.kml');
+//renderKML(map,reader);
+reader = new H.data.kml.Reader('https://raw.githubusercontent.com/primusmagestri/kmzstuff/master/bravadoltefiles/sites.kml');
 renderKML(map,reader);
 reader = new H.data.kml.Reader('https://raw.githubusercontent.com/primusmagestri/kmzstuff/master/bravadoltefiles/transmitters.kml');
 renderKML(map,reader);
 reader = new H.data.kml.Reader('https://raw.githubusercontent.com/primusmagestri/kmzstuff/master/bravadoltefiles/predictions.kml');
 renderKML(map,reader);
 // Step 6: main logic goes here
-*/
+
