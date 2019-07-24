@@ -1,0 +1,130 @@
+ <!DOCTYPE html>
+    <html>
+      <head>
+      <style>
+        #map {
+         width: 100%;
+          height: 400px;
+      }
+      </style>
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+
+    </head>
+     <body>
+
+        <div id="map" style="width: 1000px; height: 1000px;"></div>
+
+
+<script>
+ /**
+ * @fileoverview Sample showing capturing a KML file click
+ *   and displaying the contents in a side panel instead of
+ *   an InfoWindow
+ */
+var map;
+
+
+/**
+ * Initializes the map and calls the function that creates polylines.
+ */
+function initialize() {
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: new google.maps.LatLng(35.2714125, -96.9662859),
+    zoom: 8,
+    disableDefaultUI: true
+
+  });
+
+  var layers = [];
+
+      layers [0] = new google.maps.KmlLayer("https://raw.githubusercontent.com/primusmagestri/primusmagestri.github.io/master/bravadokml/bravadofiles/doc.kml",{
+        preserveViewport: true,
+        map: map
+      });
+
+      layers [1] = new google.maps.KmlLayer("https://raw.githubusercontent.com/primusmagestri/primusmagestri.github.io/master/crosslrakml/crosslrafiles/doc.kml",{
+        preserveViewport: true,
+        map: map
+      });
+
+
+ map.set('styles', [
+  {
+   featureType: 'all', 
+   elementType: 'geometry.fill', 
+   stylers: [ 
+     { visibility: 'off' }, 
+     { color: '#000000' }
+     ]
+     },
+  { 
+   featureType: 'landscape.natural.terrain', 
+   elementType: 'geometry.stroke', 
+   stylers: [ 
+     { visibility: 'on' }, 
+     { color: '#FFFFFF' }, 
+     { weight: 1 } 
+   ] 
+  },
+  {
+   featureType: 'landscape.natural.terrain', 
+   elementType: 'geometry.fill', 
+   stylers: [ 
+     { visibility: 'on' }, 
+     { color: '#FFFFFF' }
+     ]
+     },
+  {
+    featureType: 'landscape.natural.terrain', 
+    stylers: [ 
+      { visibility: 'on' },
+      ]
+      },
+{
+   featureType: 'water', 
+   elementType: 'geometry.fill', 
+   stylers: [ 
+     { visibility: 'on' }, 
+     { color: '#365F91' }
+     ]
+     },
+  {
+    featureType: 'road',
+    elementType: 'geometry',
+    stylers: [
+      { visibility: 'on' }
+    ]
+  }, {
+    featureType: 'road',
+    elementType: 'labels',
+    stylers: [
+      { visibility: 'on' }
+    ]
+  }, {
+  featureType: 'poi',
+  elementType: 'geometry',
+  stylers: [
+    { visibility: 'off' }
+  ]
+}, { 
+  elementType: 'labels.icon', 
+  stylers: [ 
+    { visibility: 'on' } 
+  ] },
+  { 
+  elementType: 'labels.text.stroke', 
+  stylers: [ 
+    { visibility: 'on' } 
+  ] },
+  { 
+  elementType: 'labels.text.fill', 
+  stylers: [ 
+    { visibility: 'on' } 
+  ] }
+
+]);
+
+}
+
+    google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
