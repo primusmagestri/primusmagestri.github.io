@@ -51,7 +51,7 @@ varzoom=Number(zoomparam);
  * Initializes the map and calls the function that creates polylines.
  */
 function initialize() {
-  var map_parameters = { center: {lat: varlat, lng: varlng}, zoom: varzoom };
+  var map_parameters = { center: {lat: varlat, lng: varlng}, zoom: varzoom,mapTypeId: 'satellite' };
 	map = new google.maps.Map(document.getElementById('map'), map_parameters);
 
   //var layers = [];
@@ -98,7 +98,7 @@ function initialize() {
 <br>
 <script>
 document.getElementById("checkbravado").checked=false;
-document.getElementById("checkcross").checked=false;
+document.getElementById("checkcross").checked=true;
 var myslider = document.getElementById("myRange");
 myslider.value=5;
 myslider.oninput = function() {
