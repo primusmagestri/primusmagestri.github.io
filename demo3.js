@@ -41,8 +41,9 @@ var defaultLayers = platform.createDefaultLayers();
 
 // Step 2: initialize a map
 var map = new H.Map(document.getElementById('map'), defaultLayers.vector.normal.map, {
-  zoom: 11,
-  center: {lat: 35.28562055, lng: -95.82674782},
+  zoom: 15,
+  center: {lat: 35.7773521, lng: -95.3282165},
+  
   pixelRatio: window.devicePixelRatio || 1
 });
 // add a resize listener to make sure that the map occupies the whole container
@@ -70,10 +71,13 @@ function logEvent(str) {
   logContainer.insertBefore(entry, logContainer.firstChild);
 }
 
-reader = new H.data.kml.Reader('https://raw.githubusercontent.com/primusmagestri/kmzstuff/master/bravadoltefiles/sites.kml');
+reader = new H.data.kml.Reader('https://raw.githubusercontent.com/primusmagestri/kmzstuff/master/bravadoltefiles/doc.kml');
+renderKML(map,reader);
+/*reader = new H.data.kml.Reader('https://raw.githubusercontent.com/primusmagestri/kmzstuff/master/bravadoltefiles/sites.kml');
 renderKML(map,reader);
 reader = new H.data.kml.Reader('https://raw.githubusercontent.com/primusmagestri/kmzstuff/master/bravadoltefiles/transmitters.kml');
 renderKML(map,reader);
 reader = new H.data.kml.Reader('https://raw.githubusercontent.com/primusmagestri/kmzstuff/master/bravadoltefiles/predictions.kml');
-// Step 6: main logic goes here
 renderKML(map,reader);
+// Step 6: main logic goes here
+*/
