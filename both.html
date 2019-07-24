@@ -29,7 +29,7 @@ var map;
  */
 function initialize() {
   map = new google.maps.Map(document.getElementById('map'), {
-    center: new google.maps.LatLng(35.2714125, -96.9662859),
+    center: new google.maps.LatLng(35.2714125, -95.9662859),
     zoom: 8,
     disableDefaultUI: true
 
@@ -37,16 +37,12 @@ function initialize() {
 
   var layers = [];
 
-      layers [0] = new google.maps.KmlLayer("https://raw.githubusercontent.com/primusmagestri/primusmagestri.github.io/master/bravadokml/bravadofiles/doc.kml",{
+      layers [0] = new google.maps.KmlLayer("https://raw.githubusercontent.com/primusmagestri/primusmagestri.github.io/master/bravadokml/bravadofiles/files/sites.kml",{
         preserveViewport: true,
         map: map
       });
 
-      layers [1] = new google.maps.KmlLayer("https://raw.githubusercontent.com/primusmagestri/primusmagestri.github.io/master/crosslrakml/crosslrafiles/doc.kml",{
-        preserveViewport: true,
-        map: map
-      });
-
+      
 
  map.set('styles', [
   {
