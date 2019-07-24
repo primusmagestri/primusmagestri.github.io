@@ -9,22 +9,22 @@
       <altitudeMode>relativeToGround</altitudeMode>
     </LookAt>
     <NetworkLink>
-      <name>Sites</name>
-      <description>List of sites</description>
+      <name>Cross LTE LRA Sites</name>
+      <description>List of Cross LTE LRA sites</description>
       <Link>
         <href>files/sites.kml</href>
       </Link>
     </NetworkLink>
     <NetworkLink>
-      <name>Transmitters</name>
-      <description>List of transmitters</description>
+      <name>Cross LTE LRA Transmitters</name>
+      <description>List of Cross LTE LRA transmitters</description>
       <Link>
         <href>files/transmitters.kml</href>
       </Link>
     </NetworkLink>
     <NetworkLink>
-      <name>Coverage plots</name>
-      <description>List of coverage plots</description>
+      <name>Cross LTE LRA Coverage plots</name>
+      <description>List of Cross LTE LRA coverage plots</description>
       <Link>
         <href>files/predictions.kml</href>
       </Link>

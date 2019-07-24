@@ -9,22 +9,22 @@
       <altitudeMode>relativeToGround</altitudeMode>
     </LookAt>
     <NetworkLink>
-      <name>Sites</name>
-      <description>List of sites</description>
+      <name>Bravado LTE Sites</name>
+      <description>List of Bravado LTE sites</description>
       <Link>
         <href>files/sites.kml</href>
       </Link>
     </NetworkLink>
     <NetworkLink>
-      <name>Transmitters</name>
-      <description>List of transmitters</description>
+      <name>Bravado LTE Transmitters</name>
+      <description>List of Bravado LTE transmitters</description>
       <Link>
         <href>files/transmitters.kml</href>
       </Link>
     </NetworkLink>
     <NetworkLink>
-      <name>Coverage plots</name>
-      <description>List of coverage plots</description>
+      <name>Bravado LTE Coverage plots</name>
+      <description>List of Bravado LTE coverage plots</description>
       <Link>
         <href>files/predictions.kml</href>
       </Link>
