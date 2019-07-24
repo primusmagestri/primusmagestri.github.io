@@ -37,15 +37,11 @@ function initialize() {
 
   var layers = [];
 
-      layers [0] = new google.maps.KmlLayer("https://raw.githubusercontent.com/primusmagestri/primusmagestri.github.io/master/bravadokml/bravadofiles/doc.kml",{
+      layers [0] = new google.maps.KmlLayer("https://raw.githubusercontent.com/primusmagestri/primusmagestri.github.io/master/docboth.kml",{
         preserveViewport: true,
         map: map
       });
 
-      layers [1] = new google.maps.KmlLayer("https://raw.githubusercontent.com/primusmagestri/primusmagestri.github.io/master/crosslrakml/crosslrafiles/doc.kml",{
-        preserveViewport: true,
-        map: map
-      });
 
 
  map.set('styles', [
