@@ -15,7 +15,8 @@
  *   an InfoWindow
  */
 var map;
-
+var layerbravado;
+var layercrosslra;
 
 /**
  * Initializes the map and calls the function that creates polylines.
@@ -30,14 +31,14 @@ function initialize() {
 
   //var layers = [];
 
-      layerbravado = new google.maps.KmlLayer("https://raw.githubusercontent.com/primusmagestri/primusmagestri.github.io/master/bravadokml/bravadofiles/doc.kml",{
+/*      layerbravado = new google.maps.KmlLayer("https://raw.githubusercontent.com/primusmagestri/primusmagestri.github.io/master/bravadokml/bravadofiles/doc.kml",{
         preserveViewport: true
       });
 
       layercrosslra = new google.maps.KmlLayer("https://raw.githubusercontent.com/primusmagestri/primusmagestri.github.io/master/crosslrakml/crosslrafiles/doc.kml",{
         preserveViewport: true
       });
-
+*/
 
  map.set('styles', [
   {
@@ -121,6 +122,13 @@ function initialize() {
 	
 	function Bravado()
 	{
+	if(!layerbravado)
+	{
+	layerbravado = new google.maps.KmlLayer("https://raw.githubusercontent.com/primusmagestri/primusmagestri.github.io/master/bravadokml/bravadofiles/doc.kml",{
+        preserveViewport: true
+      });
+}
+
 	if(document.getElementById("checkbravado").checked)
 		layerbravado.setMap(map);
 		else
@@ -128,7 +136,13 @@ function initialize() {
 	}
     function CrossLRA()
 	{
-	if(document.getElementById("checkcross").checked)
+ 	if(!layercrosslra)
+	{
+     layercrosslra = new google.maps.KmlLayer("https://raw.githubusercontent.com/primusmagestri/primusmagestri.github.io/master/crosslrakml/crosslrafiles/doc.kml",{
+        preserveViewport: true
+      });
+}
+	  if(document.getElementById("checkcross").checked)
 		layercrosslra.setMap(map);
 		else
 		layercrosslra.setMap(null);
