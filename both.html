@@ -15,18 +15,41 @@
  *   an InfoWindow
  */
 var map;
+var varlat = 35.2714125, varlng = -96.9662859;
+var varzoom=8;
 
+function getParamValue(paramName)
+{
+    var url = window.location.search.substring(1); //get rid of "?" in querystring
+    var qArray = url.split('&'); //get key-value pairs
+    for (var i = 0; i < qArray.length; i++) 
+    {
+        var pArr = qArray[i].split('='); //split key and value
+        if (pArr[0] == paramName) 
+            return pArr[1]; //return value
+    }
+}
+
+var addrparam = getParamValue('address');
+if(addrparam)
+{
+var pArr = addrparam.split(','); 
+varlat = Number(pArr[0]);
+varlng = Number(pArr[1]);
+}
+
+var zoomparam = getParamValue('zoom');
+if(zoomparam)
+{
+varzoom=Number(zoomparam);
+}
 
 /**
  * Initializes the map and calls the function that creates polylines.
  */
 function initialize() {
-  map = new google.maps.Map(document.getElementById('map'), {
-    center: new google.maps.LatLng(35.2714125, -95.9662859),
-    zoom: 8,
-    disableDefaultUI: true
-
-  });
+  var map_parameters = { center: {lat: varlat, lng: varlng}, zoom: varzoom };
+	map = new google.maps.Map(document.getElementById('map'), map_parameters);
 
   //var layers = [];
 
@@ -39,81 +62,7 @@ function initialize() {
       });
 
 
- map.set('styles', [
-  {
-   featureType: 'all', 
-   elementType: 'geometry.fill', 
-   stylers: [ 
-     { visibility: 'off' }, 
-     { color: '#000000' }
-     ]
-     },
-  { 
-   featureType: 'landscape.natural.terrain', 
-   elementType: 'geometry.stroke', 
-   stylers: [ 
-     { visibility: 'on' }, 
-     { color: '#FFFFFF' }, 
-     { weight: 1 } 
-   ] 
-  },
-  {
-   featureType: 'landscape.natural.terrain', 
-   elementType: 'geometry.fill', 
-   stylers: [ 
-     { visibility: 'on' }, 
-     { color: '#FFFFFF' }
-     ]
-     },
-  {
-    featureType: 'landscape.natural.terrain', 
-    stylers: [ 
-      { visibility: 'on' },
-      ]
-      },
-{
-   featureType: 'water', 
-   elementType: 'geometry.fill', 
-   stylers: [ 
-     { visibility: 'on' }, 
-     { color: '#365F91' }
-     ]
-     },
-  {
-    featureType: 'road',
-    elementType: 'geometry',
-    stylers: [
-      { visibility: 'on' }
-    ]
-  }, {
-    featureType: 'road',
-    elementType: 'labels',
-    stylers: [
-      { visibility: 'on' }
-    ]
-  }, {
-  featureType: 'poi',
-  elementType: 'geometry',
-  stylers: [
-    { visibility: 'off' }
-  ]
-}, { 
-  elementType: 'labels.icon', 
-  stylers: [ 
-    { visibility: 'on' } 
-  ] },
-  { 
-  elementType: 'labels.text.stroke', 
-  stylers: [ 
-    { visibility: 'on' } 
-  ] },
-  { 
-  elementType: 'labels.text.fill', 
-  stylers: [ 
-    { visibility: 'on' } 
-  ] }
-
-]);
+ 
 
 }
 
