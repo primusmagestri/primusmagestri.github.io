@@ -79,6 +79,7 @@ addthescript(innerDoc);
     url: url,
     success: function(data){
 	//debugger;
+	console.log(data.substring(1, 100));
 	if(data.includes("permission_denied"))
 	callback(false);
 	else
