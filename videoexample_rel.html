@@ -1,0 +1,33 @@
+<head>
+<script src="md5.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script>
+function computemd5()
+{
+var milliseconds = (new Date).getTime();
+var expires = milliseconds+3600;
+var path = 'players/kvnuuipe-4FuizHuQ.js';
+var secret='KsQ5gv8wydgEf6PtVuV0xqTi';
+var thevalue=path+':'+expires+':'+secret;
+//alert(thevalue);
+var hash = md5(thevalue);
+//alert(hash);
+var url = 'http://content.jwplatform.com/'+path+'?exp='+expires+'&sig='+hash;
+alert(url);
+//$("#vid").load(" #vid > *");
+//alert($("#vid").innerHTML);
+//$("#vid").innerHTML = "whatever";
+}
+</script>
+<title>
+Video sample
+</title>
+</head>
+<body>
+<p>This is a JWPlayer video sample HTML</p>
+ <button onclick="computemd5()">Click me</button> 
+
+
+
+</body>
