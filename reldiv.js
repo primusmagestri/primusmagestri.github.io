@@ -85,7 +85,8 @@ addthescript(innerDoc);
 	else
       callback(true);
     },
-    error: function() {
+    error: function(data) {
+	console.log(data.substring(1, 100));
       callback(false);
     }
   });
