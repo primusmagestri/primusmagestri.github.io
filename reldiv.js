@@ -56,12 +56,15 @@ if(exists){
   else
   {
   if(!timedout)
+  {
 	timedout=durationsec;
+	console.log('not available anymore, stopped after ' + timedout);
+	}
   document.getElementById('lbltipAddedComment').innerHTML = 'URL not available anymore after ' + durationsec + ' sec';
   document.getElementById("lbltipAddedComment").style.color = "red";
   
-  console.log('not available anymore, stopped after ' + timedout);
-  clearTimeout(mytimer);
+  
+  //clearTimeout(mytimer);
   }
   
 });
