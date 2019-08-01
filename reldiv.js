@@ -45,7 +45,7 @@ function checkurlExists()
 {
 //alert('checking');
 urlExists(url, function(exists){
-debugger;
+//debugger;
 var durationsec = Math.round(((new Date).getTime()-milliseconds)/1000);
 if(exists){
   document.getElementById('lbltipAddedComment').innerHTML = 'URL still available after ' + durationsec + ' sec';
