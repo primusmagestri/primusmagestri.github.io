@@ -76,9 +76,12 @@ addthescript(innerDoc);
 }  
   function urlExists(url, callback){
   $.ajax({
-    type: 'HEAD',
     url: url,
-    success: function(){
+    success: function(data){
+	//debugger;
+	if(data.includes("permission_denied"))
+	callback(false);
+	else
       callback(true);
     },
     error: function() {
