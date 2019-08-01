@@ -51,7 +51,7 @@ if(exists){
   document.getElementById('lbltipAddedComment').innerHTML = 'URL still available after ' + durationsec + ' sec';
   document.getElementById("lbltipAddedComment").style.color = "green";
   
-  console.log('still there after ' + duration);
+  console.log('still there after ' + durationsec);
   }
   else
   {
