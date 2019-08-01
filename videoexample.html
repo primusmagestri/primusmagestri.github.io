@@ -1,5 +1,28 @@
 <html>
 <head>
+<style>
+        #parent_div{
+    width:1100px;
+    height:400px;
+    border:1px solid red;
+    margin-right:10px;
+    float:left;
+}
+.vidgood{
+    float:left;
+    width:500px;
+    height:400px;
+	border:1px solid green;
+    margin-right:5px;
+}
+.vidbad{
+    float:right;
+    width:510px;
+    height:410px;
+	border:1px solid blue;
+    
+}
+      </style>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <script src="md5.js"></script>
 <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
@@ -13,11 +36,19 @@ Video sample
 </title>
 </head>
 <body>
+<script  src="./reldiv.js"></script>
 <p>This is a JWPlayer video sample HTML</p>
- <button id="loadstuff" >Click me</button> 
- <div id="vid" style="width: 500px; height: 400px;" itemscope itemtype="https://schema.org/VideoObject"><meta itemprop="uploadDate" content="Thu Aug 01 2019 00:00:00 GMT+0300 (Eastern European Summer Time)"/><meta itemprop="name" content="Yoda &amp; Furry"/><meta itemprop="duration" content="PT57.4S" />
+ <button id="loadstuff" onclick="setup(); ">Click me</button> 
+ <label id="lbltipAddedComment"></label>
+ <br>
+ <div id='parent_div'>
+ <div id="vid" class="vidgood"  itemscope itemtype="https://schema.org/VideoObject"><meta itemprop="uploadDate" content="Thu Aug 01 2019 00:00:00 GMT+0300 (Eastern European Summer Time)"/><meta itemprop="name" content="Yoda &amp; Furry"/><meta itemprop="duration" content="PT57.4S" />
  <div id='botr_kvnuuipe_4FuizHuQ_div'></div>
  </div> 
-<script  src="./reldiv.js"></script>
+ <div id="vidhack" class="vidbad" >
+ <iframe id="hack_iframe" src='videoexample_iframe.html' width="500px" height="400px"></iframe> 
+ </div> 
+ </div> 
+
 </body>
 </html>
