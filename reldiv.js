@@ -1,3 +1,4 @@
+var timedout;
 var milliseconds;
 var mytimer;
 var url;
@@ -21,14 +22,10 @@ console.log(expires);
 mytimer = setInterval(checkurlExists, 10000);
 addthescript(document);
 
-//var html_string= composehacked(url);
-//document.getElementById('hack_iframe').src = "data:text/html;charset=utf-8," + html_string;
-//debugger;
-//document.getElementById('hack_iframe')
 var iframe = document.getElementById('hack_iframe');
 var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
 addthescript(innerDoc);
-//var innerviddiv = innerDoc.getElementById('vid');
+
   }
   //);
 
@@ -43,27 +40,26 @@ viddiv.appendChild(script); // Append it
 
   }
   
-  function composehacked(url)
-  {
-  var hackedcontent='<html><head><meta http-equiv="content-type" content="text/html; charset=utf-8" /><title>Video sample</title></head><body><p>This is a JWPlayer video sample HTML</p><div id="videomine" style="width: 500px; height: 400px;" itemscope itemtype="https://schema.org/VideoObject"><meta itemprop="uploadDate" content="Thu Aug 01 2019 00:00:00 GMT+0300 (Eastern European Summer Time)"/><meta itemprop="name" content="Yoda &amp; Furry"/><meta itemprop="duration" content="PT57.4S" /><script src="'+url+'"></script></div></body></html>';
-  return hackedcontent;
-  }
+  
 function checkurlExists()
 {
 //alert('checking');
 urlExists(url, function(exists){
-//debugger;
+debugger;
+var durationsec = Math.round(((new Date).getTime()-milliseconds)/1000);
 if(exists){
-  document.getElementById('lbltipAddedComment').innerHTML = 'URL available!';
+  document.getElementById('lbltipAddedComment').innerHTML = 'URL still available after ' + durationsec + ' sec';
   document.getElementById("lbltipAddedComment").style.color = "green";
-  var duration = (new Date).getTime()-milliseconds;
+  
   console.log('still there after ' + duration);
   }
   else
   {
-  document.getElementById('lbltipAddedComment').innerHTML = 'URL not available!';
+  if(!timedout)
+	timedout=durationsec;
+  document.getElementById('lbltipAddedComment').innerHTML = 'URL not available anymore after ' + durationsec + ' sec';
   document.getElementById("lbltipAddedComment").style.color = "red";
-  var timedout = (new Date).getTime()-milliseconds;
+  
   console.log('not available anymore, stopped after ' + timedout);
   clearTimeout(mytimer);
   }
