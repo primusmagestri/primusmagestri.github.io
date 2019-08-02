@@ -79,7 +79,7 @@ addthescript(innerDoc);
     type: 'HEAD',
     url: url,
     success: function(message,text,jqXHR){
-	console.log('ajax success' + jqXHR.status);
+	console.log('ajax success ' + jqXHR.status);
 	//console.log(message);
 	//console.log(text);
 	//console.log(jqXHR.getResponseHeader('Content-Length'));
