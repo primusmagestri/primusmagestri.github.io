@@ -78,14 +78,18 @@ addthescript(innerDoc);
   $.ajax({
     type: 'HEAD',
     url: url,
-    success: function(message,text,jqXHR){
+    success: function(textStatus, jqXHR){
+	//debugger;
 	console.log('ajax success ' + jqXHR.status);
 	//console.log(message);
 	//console.log(text);
 	//console.log(jqXHR.getResponseHeader('Content-Length'));
       callback(true);
     },
-    error: function(message,text,jqXHR) {
+	complete: function(xhr, textStatus) {
+        console.log('COMPLETE: ' + xhr.status);
+    } ,
+    error: function(jqXHR) {
 	console.log('ajax error ' + jqXHR.status);
 	//console.log(message);
 	//console.log(text);
