@@ -78,10 +78,16 @@ addthescript(innerDoc);
   $.ajax({
     type: 'HEAD',
     url: url,
-    success: function(){
+    success: function(message,text,jqXHR){
+	console.log('ajax success');
+	console.log(message);
+	console.log(text);
       callback(true);
     },
-    error: function() {
+    error: function(message,text,jqXHR) {
+	console.log('ajax error');
+	console.log(message);
+	console.log(text);
       callback(false);
     }
   });
