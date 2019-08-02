@@ -6,7 +6,7 @@ var url;
  
  function setup() {
     milliseconds = (new Date).getTime();
-var expires = Math.round(milliseconds/1000)+100;
+var expires = Math.round(milliseconds/1000)+10;
 //debugger;
 var path = 'players/kvnuuipe-4FuizHuQ.js';
 var secret='KsQ5gv8wydgEf6PtVuV0xqTi';
@@ -76,17 +76,12 @@ addthescript(innerDoc);
 }  
   function urlExists(url, callback){
   $.ajax({
+    type: 'HEAD',
     url: url,
-    success: function(data){
-	//debugger;
-	console.log(data.substring(1, 100));
-	if(data.includes("permission_denied"))
-	callback(false);
-	else
+    success: function(){
       callback(true);
     },
-    error: function(data) {
-	console.log(data.substring(1, 100));
+    error: function() {
       callback(false);
     }
   });
