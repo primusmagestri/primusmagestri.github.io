@@ -60,7 +60,7 @@ if(exists){
 	timedout=durationsec;
 	console.log('not available anymore, stopped after ' + timedout);
 	}
-  document.getElementById('lbltipAddedComment').innerHTML = 'URL not available anymore after ' + durationsec + ' sec';
+  document.getElementById('lbltipAddedComment').innerHTML = 'URL not available anymore after ' + timedout + ' sec';
   document.getElementById("lbltipAddedComment").style.color = "red";
   
   
