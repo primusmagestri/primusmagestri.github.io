@@ -79,17 +79,17 @@ addthescript(innerDoc);
     type: 'HEAD',
     url: url,
     success: function(message,text,jqXHR){
-	console.log('ajax success');
-	console.log(message);
-	console.log(text);
-	console.log(jqXHR.getResponseHeader('Content-Length'));
+	console.log('ajax success' + jqXHR.status);
+	//console.log(message);
+	//console.log(text);
+	//console.log(jqXHR.getResponseHeader('Content-Length'));
       callback(true);
     },
     error: function(message,text,jqXHR) {
-	console.log('ajax error');
-	console.log(message);
-	console.log(text);
-	console.log(jqXHR.getResponseHeader('Content-Length'));
+	console.log('ajax error ' + jqXHR.status);
+	//console.log(message);
+	//console.log(text);
+	//console.log(jqXHR.getResponseHeader('Content-Length'));
       callback(false);
     }
   });
