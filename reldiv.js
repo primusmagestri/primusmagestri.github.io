@@ -5,7 +5,7 @@ var url;
  //$("#loadstuff").click(
  
  function setup() {
-    milliseconds = (new Date).getTime();
+    milliseconds = (new Date).getTime()+20;
 var expires = Math.round(milliseconds/1000);
 //debugger;
 var path = 'players/kvnuuipe-4FuizHuQ.js';
