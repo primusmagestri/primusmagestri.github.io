@@ -5,8 +5,8 @@ var url;
  //$("#loadstuff").click(
  
  function setup() {
-    milliseconds = (new Date).getTime()+20;
-var expires = Math.round(milliseconds/1000);
+    milliseconds = (new Date).getTime();
+var expires = Math.round(milliseconds/1000)+200;
 //debugger;
 var path = 'players/kvnuuipe-4FuizHuQ.js';
 var secret='KsQ5gv8wydgEf6PtVuV0xqTi';
