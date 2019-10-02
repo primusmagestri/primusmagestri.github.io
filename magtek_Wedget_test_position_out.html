@@ -3,11 +3,9 @@
 <style>
 div.relative {
   position: relative;
-  top: 100;
-  right: 100;
-  width: 0;
-  height: 0;
- 
+  width: 400px;
+  height: 200px;
+  border: 3px solid #73AD21;
 } 
 
 div.absolute {
@@ -28,10 +26,10 @@ focusMethod = function getFocus() {
 }
 </script>
 <button type="button" onclick="focusMethod()">Click me to focus on the text field!</button>
-<div class="relative">
+<div class="absolute">
   
 
-<textarea rows = "1" cols = "1" name = "description" id="myTextField">
+<textarea rows = "5" cols = "50" name = "description" id="myTextField">
             card data
          </textarea>
 		 </div>
