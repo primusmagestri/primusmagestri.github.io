@@ -24,6 +24,7 @@ div.absolute {
 <script>
 
 focusMethod = function getFocus() {           
+document.getElementById("myTextField").value="";
   document.getElementById("myTextField").focus();
 }
 
@@ -33,15 +34,13 @@ function myFunction() {
 }
 </script>
 <button type="button" onclick="focusMethod()">Click me to focus on the text field!</button>
-<textarea rows = "50" cols = "50" name = "theoutput" id="theoutput" >
+<textarea rows = "5" cols = "5" name = "theoutput" id="theoutput" >
             
          </textarea>
 <div class="relative">
-  
+  <input type="text" id="myTextField" >
 
-<textarea rows = "1" cols = "1" name = "description" id="myTextField" onkeyup="myFunction()">
-            card data
-         </textarea>
+<textarea rows = "1" cols = "1" name = "description" id="myTextFieldarea" onkeyup="myFunction()"></textarea>
 		 </div>
 
 </body>
