@@ -16,6 +16,7 @@ function setup(){
 function SelectAll(id,newvalue)
 {
 console.log("try");
+dummy.innerHTML="";
 document.getElementById(id).value=newvalue;
 document.getElementById(id).focus();
 document.getElementById(id).selectionStart = 0;
