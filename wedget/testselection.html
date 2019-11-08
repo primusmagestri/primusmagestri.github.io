@@ -27,10 +27,10 @@ document.getElementById(id).selectionStart = 0;
 <button onclick="SelectAll('areaswipe','[REQUEST EMV]')">EMV</button> 
 <button onclick="SelectAll('areaswipe','[START TRANSACTION]')">Start transaction</button> 
 <br>
+<p id="dummy"></p>
+<div style="width: 0;overflow: hidden;">
 <textarea id="areaswipe" style="width:80%;height:60px;"></textarea>
-<textarea id="dummy" style="width:80%;height:60px">
-dummy
-</textarea>
+</div>
 <script>
 
   /*areaswipe.onfocus = () => {
