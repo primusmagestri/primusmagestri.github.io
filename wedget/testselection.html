@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+<textarea id="area" style="width:80%;height:60px">[SWIPE CARD]</textarea>
+<textarea id="dummy" style="width:80%;height:60px">
+dummy
+</textarea>
+<script>
+  area.onfocus = () => {
+    // zero delay setTimeout to run after browser "focus" action finishes
+    setTimeout(() => {
+      // we can set any selection
+      // if start=end, the cursor it exactly at that place
+      area.selectionStart = 0;
+	  area.selectionEnd = 12;
+    });
+  };
+</script>
+
+</body>
+</html>
