@@ -13,21 +13,20 @@ function setup(){
 <body onLoad="setup();">
 
 <script>
-function SelectAll(id,newvalue)
+function SelectAll(id)
 {
 console.log("try");
-document.getElementById(id).value=newvalue;
 document.getElementById(id).focus();
 document.getElementById(id).selectionStart = 0;
-	document.getElementById(id).selectionEnd = document.getElementById(id).value.length;
+	document.getElementById(id).selectionEnd = 12;
 	  
 }
 </script>
-<button onclick="SelectAll('areaswipe','[SWIPE CARD]')">Swipe</button> 
-<button onclick="SelectAll('areaswipe','[REQUEST EMV]')">EMV</button> 
-<button onclick="SelectAll('areaswipe','[START TRANSACTION]')">Start transaction</button> 
+<button onclick="SelectAll('areaswipe')">Start transaction</button> 
 <br>
-<textarea id="areaswipe" style="width:80%;height:60px;"></textarea>
+<textarea id="areaswipe" style="width:80%;height:60px;">[SWIPE CARD]</textarea>
+<textarea id="areaemv" style="width:80%;height:60px;"  >[REQUEST EMV]</textarea>
+<textarea id="areastarttx" style="width:80%;height:60px;">[START TRANSACTION]</textarea>
 <textarea id="dummy" style="width:80%;height:60px">
 dummy
 </textarea>
