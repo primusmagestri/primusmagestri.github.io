@@ -1,11 +1,23 @@
 <!DOCTYPE html>
 <html>
 <body>
+<script>
+function SelectAll(id)
+{
+console.log("try");
+area.selectionStart = 0;
+	  area.selectionEnd = 12;
+	  area.focus();
+}
+</script>
+<button onclick="SelectAll('area')">Start transaction</button> 
+<br>
 <textarea id="area" style="width:80%;height:60px">[SWIPE CARD]</textarea>
 <textarea id="dummy" style="width:80%;height:60px">
 dummy
 </textarea>
 <script>
+
   area.onfocus = () => {
     // zero delay setTimeout to run after browser "focus" action finishes
     setTimeout(() => {
