@@ -1,0 +1,38 @@
+<html>
+<head>
+<style>
+div.relative {
+  position: relative;
+  width: 400px;
+  height: 200px;
+  border: 3px solid #73AD21;
+} 
+
+div.absolute {
+  position: absolute;
+  top: 10000px;
+  right: 10000px;
+  width: 200px;
+  height: 100px;
+  border: 3px solid #73AD21;
+}
+</style>
+</head>
+<body>
+<script>
+
+focusMethod = function getFocus() {           
+  document.getElementById("myTextField").focus();
+}
+</script>
+<button type="button" onclick="focusMethod()">Click me to focus on the text field!</button>
+<div class="absolute">
+  
+
+<textarea rows = "5" cols = "50" name = "description" id="myTextField">
+            card data
+         </textarea>
+		 </div>
+
+</body>
+</html>
