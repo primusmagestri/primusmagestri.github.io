@@ -45,7 +45,8 @@ document.getElementById(id).selectionStart = 0;
   };*/
   
   areaswipe.oninput = () => {
-  dummy.value=areaswipe.value;
+  console.log(areaswipe.value);
+  dummy.innerHTML=areaswipe.value;
   };
   /*areaemv.oninput = () => {
   dummy.value=areaswipe.value;
