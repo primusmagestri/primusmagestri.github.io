@@ -1,16 +1,29 @@
 <!DOCTYPE html>
 <html>
 <body>
-
+<script type="text/javascript">
+function selectText(containerid) {
+    if (document.selection) { // IE
+        var range = document.body.createTextRange();
+        range.moveToElementText(document.getElementById(containerid));
+        range.select();
+    } else if (window.getSelection) {
+        var range = document.createRange();
+        range.selectNode(document.getElementById(containerid));
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(range);
+    }
+}
+</script>
 <input type="text" id="card-data-swipe" value="[SWIPE CARD]" onclick="this.select();this.focus();"  >
 <input type="text" id="card-data-emv" value="[REQUEST EMV]"   >
 <input type="text" id="card-data-starttx" value="[START TRANSACTION]"   >
 
-<textarea id="toswipe" rows="4" cols="50"  onclick="this.focus();this.select()" >
+<textarea id="toswipe" rows="4" cols="50"  onclick="selectText('toswipe')" >
 [SWIPE CARD]
 </textarea>
 
-<textarea id="toemv" rows="4" cols="50" onclick="this.focus();this.select()" >
+<textarea id="toemv" rows="4" cols="50" onclick="selectText('toemv')" >
 [REQUEST EMV]
 </textarea>
 
