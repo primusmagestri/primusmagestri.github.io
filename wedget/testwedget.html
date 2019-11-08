@@ -2,6 +2,12 @@
 <html>
 <body>
 <script type="text/javascript">
+function SelectAll(id)
+{
+    document.getElementById(id).focus();
+    document.getElementById(id).select();
+}
+
 function selectText(containerid) {
     if (document.selection) { // IE
         var range = document.body.createTextRange();
@@ -15,21 +21,17 @@ function selectText(containerid) {
     }
 }
 </script>
+ <button onclick="SelectAll('card-data-starttx')">Start transaction</button> 
+ <br>
 <input type="text" id="card-data-swipe" value="[SWIPE CARD]" onclick="this.select();this.focus();"  >
 <input type="text" id="card-data-emv" value="[REQUEST EMV]"   >
 <input type="text" id="card-data-starttx" value="[START TRANSACTION]"   >
-
-<textarea id="toswipe" rows="4" cols="50"  onclick="selectText('toswipe')" >
-[SWIPE CARD]
-</textarea>
-
-<textarea id="toemv" rows="4" cols="50" onclick="selectText('toemv')" >
-[REQUEST EMV]
-</textarea>
-
-<textarea id="tostarttx" rows="4" cols="50" onclick="this.focus();this.select()" >
-[START TRANSACTION]
-</textarea>
+<br>
+<textarea id="toswipe" rows="4" cols="50"  onclick="selectText('toswipe')" >[SWIPE CARD]</textarea>
+<br>
+<textarea id="toemv" rows="4" cols="50" onclick="selectText('toemv')" >[REQUEST EMV]</textarea>
+<br>
+<textarea id="tostarttx" rows="4" cols="50" onclick="this.focus();this.select()" >[START TRANSACTION]</textarea>
 
 </body>
 </html>
