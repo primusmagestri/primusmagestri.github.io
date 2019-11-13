@@ -1,6 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style>
+div.relative {
+  position: relative;
+  width: 400px;
+  height: 200px;
+  border: 3px solid #73AD21;
+} 
+
+div.absolute {
+  position: absolute;
+  top: -10000px;
+  right: 10000px;
+  width: 200px;
+  height: 100px;
+  border: 3px solid #73AD21;
+  overflow: hidden;
+}
+</style>
 </head>
 <body>
 
@@ -27,7 +45,8 @@ document.getElementById(id).selectionStart = 0;
 <button onclick="SelectAll('areaswipe','[START TRANSACTION]')">Start transaction</button> 
 <br>
 <p id="dummy">aa</p>
- <div style="width: 80;overflow: hidden;"> 
+<div class="absolute">
+ <!-- <div class="absolute" style="width: 80;overflow: hidden;">  -->
 <!-- <div> -->
 <!-- <textarea id="areaswipe" style="width:80%;height:60px;opacity:0;filter:alpha(opacity=0);"></textarea> -->
 <textarea id="areaswipe" style="width:80%;height:60px;"></textarea>
