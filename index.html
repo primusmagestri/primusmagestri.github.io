@@ -47,6 +47,12 @@ if(zoomparam)
 {
 varzoom=Number(zoomparam);
 }
+layerkmlsamples = new google.maps.KmlLayer("https://developers.google.com/kml/documentation/KML_Samples.kml",{
+        preserveViewport: true
+      });
+layerpentagon = new google.maps.KmlLayer("https://developers.google.com/kml/documentation/KML_Samples.kml",{
+        preserveViewport: true
+      });
 
       layerbravado = new google.maps.KmlLayer("https://raw.githubusercontent.com/primusmagestri/primusmagestri.github.io/master/bravadokml/bravadofiles/doc.kml",{
         preserveViewport: true
@@ -65,7 +71,8 @@ function initialize() {
 
 Bravado();
 CrossLRA();
-
+//layerkmlsamples.setMap(map);
+layerpentagon.setMap(map);
 }
 
     google.maps.event.addDomListener(window, 'load', initialize);
