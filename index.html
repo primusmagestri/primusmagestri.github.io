@@ -60,6 +60,9 @@ layerpentagon = new google.maps.KmlLayer("https://raw.githubusercontent.com/prim
 layercaftexaseast = new google.maps.KmlLayer("https://raw.githubusercontent.com/primusmagestri/primusmagestri.github.io/master/caf_texas_east.kml",{
         preserveViewport: true
       });
+layercafkansas = new google.maps.KmlLayer("https://raw.githubusercontent.com/primusmagestri/primusmagestri.github.io/master/caf_kansas.kml",{
+        preserveViewport: true
+      });
 
       layerbravado = new google.maps.KmlLayer("https://raw.githubusercontent.com/primusmagestri/primusmagestri.github.io/master/bravadokml/bravadofiles/doc.kml",{
         preserveViewport: true
@@ -79,6 +82,7 @@ function initialize() {
 Bravado();
 CrossLRA();
 CAFTexasEast();
+CAFKansas();
 //layerkmlsamples.setMap(map);
 //layercaftexaseast.setMap(map);
 }
@@ -108,12 +112,20 @@ CAFTexasEast();
 		else
 		layercaftexaseast.setMap(null);
 	}
+	function CAFKansas()
+	{
+	if(document.getElementById("checkcafkansas").checked)
+		layercafkansas.setMap(map);
+		else
+		layercafkansas.setMap(null);
+	}
     </script>
     </head>
      <body>
 <input type="checkbox" id="checkbravado" onclick="Bravado()" >Show Bravado<br>
 <input type="checkbox" id="checkcross" onclick="CrossLRA()" >Show Cross LRA<br>
 <input type="checkbox" id="checkcaftexaseast" onclick="CAFTexasEast()" >Show CAF Texas East<br>
+<input type="checkbox" id="checkcafkansas" onclick="CAFKansas()" >Show CAF Kansas<br>
 <div class="slidecontainer">
 <label for="myRange">Transparency</label>
   <input type="range" min="1" max="10" value="5" class="slider" id="myRange">
@@ -123,6 +135,7 @@ CAFTexasEast();
 document.getElementById("checkbravado").checked=false;
 document.getElementById("checkcross").checked=false;
 document.getElementById("checkcaftexaseast").checked=false;
+document.getElementById("checkcafkansas").checked=false;
 var myslider = document.getElementById("myRange");
 myslider.value=5;
 myslider.oninput = function() {
