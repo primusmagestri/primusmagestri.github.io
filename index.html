@@ -68,6 +68,11 @@ layercafkansas = new google.maps.KmlLayer("https://raw.githubusercontent.com/pri
         preserveViewport: true
       });
 
+	layerbravadofixed = new google.maps.KmlLayer("https://raw.githubusercontent.com/primusmagestri/primusmagestri.github.io/master/bravadokmz/Bravadofixed2Aug23.kmz",{
+        preserveViewport: true
+      });
+
+
       layercrosslra = new google.maps.KmlLayer("https://raw.githubusercontent.com/primusmagestri/primusmagestri.github.io/master/crosslrakml/crosslrafiles/doc.kml",{
         preserveViewport: true
       });
@@ -80,6 +85,7 @@ function initialize() {
 	map = new google.maps.Map(document.getElementById('map'), map_parameters);
 
 Bravado();
+BravadoFixed();
 CrossLRA();
 CAFTexasEast();
 CAFKansas();
@@ -96,6 +102,14 @@ CAFKansas();
 		layerbravado.setMap(map);
 		else
 		layerbravado.setMap(null);
+	}
+	function BravadoFixed()
+	{
+	
+	if(document.getElementById("checkbravadofixed").checked)
+		layerbravadofixed.setMap(map);
+		else
+		layerbravadofixed.setMap(null);
 	}
     function CrossLRA()
 	{
@@ -123,6 +137,7 @@ CAFKansas();
     </head>
      <body>
 <input type="checkbox" id="checkbravado" onclick="Bravado()" >Show Bravado<br>
+<input type="checkbox" id="checkbravadofixed" onclick="Bravado()" >Show Bravado Fixed<br>
 <input type="checkbox" id="checkcross" onclick="CrossLRA()" >Show Cross LRA<br>
 <input type="checkbox" id="checkcaftexaseast" onclick="CAFTexasEast()" >Show CAF Texas East<br>
 <input type="checkbox" id="checkcafkansas" onclick="CAFKansas()" >Show CAF Kansas<br>
@@ -133,6 +148,7 @@ CAFKansas();
 <br>
 <script>
 document.getElementById("checkbravado").checked=false;
+document.getElementById("checkbravadofixed").checked=false;
 document.getElementById("checkcross").checked=false;
 document.getElementById("checkcaftexaseast").checked=false;
 document.getElementById("checkcafkansas").checked=false;
