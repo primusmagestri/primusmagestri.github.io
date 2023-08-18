@@ -1,0 +1,33 @@
+<kml>
+  <Document>
+    <name>Coverage by RSRP Level (DL) Bravado fixed 2 Aug 23</name>
+    <description>Document entities</description>
+    <LookAt>
+      <longitude>-95.6745779379594</longitude>
+      <latitude>34.986860180364</latitude>
+      <range>339214.920296852</range>
+      <altitudeMode>relativeToGround</altitudeMode>
+    </LookAt>
+    <NetworkLink>
+      <name>Sites</name>
+      <description>List of sites</description>
+      <Link>
+        <href>files/sites.kml</href>
+      </Link>
+    </NetworkLink>
+    <NetworkLink>
+      <name>Transmitters</name>
+      <description>List of transmitters</description>
+      <Link>
+        <href>files/transmitters.kml</href>
+      </Link>
+    </NetworkLink>
+    <NetworkLink>
+      <name>Coverage plots</name>
+      <description>List of coverage plots</description>
+      <Link>
+        <href>files/predictions.kml</href>
+      </Link>
+    </NetworkLink>
+  </Document>
+</kml>
